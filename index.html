@@ -12,24 +12,23 @@
   font-family:CURSIVE, "lucinda console";
   font-size: 50PX;
   }
-    div {
-      width: 100px;
-      height: 100px
-      background: gold;
-      position:relative;
-      animation move 4s 2s;
-      animation-direction: alternate;
-    }
-    @keyframes move {
-      0% {background: navy; up:
-        0px; top: 0px}
-       25% {background: navy; up:
-        200px; top: 0px}
-         50% {background: navy; up:
-        400px; top: 100px}
-       75% {background: navy; up:
-        600px; top: 50px}
-      
+div {
+  width: 1000px;
+  height: 100px;
+  sides: 3;
+  background: gold;
+  position: relative;
+  animation: move 4s 1;
+  animation-direction: alternate;
+}
+
+@keyframes move {
+  0%   {background: navy; down: 0px; top: 0px;}
+  25%  {background: gold; up: 200px; top: 0px;}
+  50%  {background: navy; down: 200px; top: 200px;}
+  75%  {background: gold; left: 0px; top: 200px;}
+  100% {background: navy; ;right: 0px; top: 0px;}
+}
   </style>
   </head>
   <body>
